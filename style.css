@@ -1,3 +1,5 @@
+
+/* Configurações do bloco da barra do topo*/
 .barra-topo {
     display: flex;
     height: 54px;
@@ -17,8 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: blue; */
-    width: 145px; /*Pode pré-definir esses tamanhos?*/
+    width: 145px; 
 }
 
 .barra-topo-icones-esquerda img {
@@ -27,8 +28,7 @@
 }
 
 .barra-pesquisar{
-    /* background-color: red; */
-    background: #FAFAFA;
+    background-color: #FAFAFA;
     width: 215px;
     height: 28px;
     border-radius: 3px;
@@ -42,14 +42,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: blue; */
-    width: 125px; /*Pode pré-definir esses tamanhos?*/
+    width: 125px; 
 }
 
+.separador-vertical {
+    background-color: #DBDBDB;
+    width: 1px;
+    height: 22px;
+}
+
+/* Configurações do bloco de stories*/
+
 .stories{
-    /* background-color: yellow; */
     width:100%;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 3px;
     border: 1px solid #DBDBDB;
     display: flex;
@@ -76,7 +82,6 @@
 }
 
 .storie-content {
-    /* position: absolute; */
     width: 56px;
     height: 56px;
     border-radius: 28px;
@@ -91,51 +96,27 @@
     border-radius: 33px;
 }
 
-/* .sub-encapsula-stories{
-    position: relative;
-} */
-
-.foto-feed {
-    width: 612px;
-    height: 612px;
-}
-
 .conf-seta-stories{
     position: absolute;
     padding: 16px;
     right: 21px;
 }
 
-/* .curtidas-fotos {
-    display: flex;
-}
-
-.curtidas-fotos img {
-    width: 20px;
-    height: 20px;
-} */
-
+/* Configurações dos blocos do feed*/
 .primeiro-bloco {
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
     align-items: center;
-   /*  background-color: brown; */
     width: 614px;
     height: 749px;
-    margin-bottom: 60px; /*Se eu não colocar essa borda eles não desgrudam. Será que é porque ocupa a página toda?*/
+    margin-bottom: 60px; 
     border-radius: 3px;
     border: 1px solid #DBDBDB;
     background-color: #FFFFFF;
-    /*Tive que colocar position absolute para poder encaixar dentro da div do stories junto com o bloco da direita
-    ai tive que especificar top e left. Como isso afeta minha página quando vai para celular? Pode fazer isso?*/
-/*     position: absolute;
-    left: 215px;
-    top: 230px; */
 }
 
-/*Problema: Como eu coloquei position absolute para conseguir posicionar dentro da div do stories junto
- com o bloco da direita, agora para colocar mais posts tenho que continuar definindo o top e left para cada publi do feed */
+
 .primeiro-bloco-2 {
     display: flex;
     flex-direction: column; 
@@ -148,31 +129,30 @@
     border-radius: 3px;
     border: 1px solid #DBDBDB;
     background-color: #FFFFFF;
-    /*Tive que colocar position absolute para poder encaixar dentro da div do stories junto com o bloco da direita
-    ai tive que especificar top e left. Como isso afeta minha página quando vai para celular? Pode fazer isso?*/
-/*     position: absolute;
-    left: 216px;
-    top: 1100px; */
 }
 
-/*Essa imagem do gato 3 quando baixa só baixa a parte de cima... É isso mesmo?*/
 .primeiro-bloco-3 {
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
     align-items: center;
-    /* background-color: brown; */
     width: 614px;
     height: 749px;
     border-radius: 3px;
     border: 1px solid #DBDBDB;
     background-color: #FFFFFF;
 }
+
+.foto-feed {
+    width: 612px;
+    height: 612px;
+}
+
+/* Cabeçalhos do bloco do feed*/
 .cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 614px; */ /*Posso colocar a largura aqui igual do bloco do stories? Isso vai comprometer quando mudar para tela menor?*/
     height: 60px;
     width:100%;
 }
@@ -203,6 +183,8 @@
     margin-right: 15px;
 }
 
+/* Configurações do bloco de feed - parte de baixo*/
+
 .divisao-qte-curtidas{
     margin-left: 17px;
     margin-right: 5px;
@@ -219,7 +201,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   /*  border: 2px solid black; */
     height: 76px;
     width:100%;
 }
@@ -228,7 +209,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 614px; /*Posso colocar a largura aqui igual do bloco do stories? Isso vai comprometer quando mudar para tela menor?*/
     width:100%;
 }
 
@@ -264,20 +244,14 @@
     align-items: center;
 }
 
-.rotate-45 {
-    display: inline-block; 
-    transform: rotate(315deg);
-}
-
+/* Configurações do bloco a direita*/
 .bloco-direita{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 292px;
-    height: 452px; /*Novamente coloquei tamanhos específicos pro bloco. Pode fazer isso? Isso prejudica a página
-    quando for visualizar em tamanhos de tela diferentes?*/
+    height: 452px; 
     margin-top: 34px;
-    /* border: 2px solid green; */
     position: sticky;
     top: 84px;
     z-index: 1;
@@ -300,13 +274,6 @@
     border-radius: 16px;
 }
 
-.corpo-pagina{
-    background-color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
 
 .mini-bloco-1{
     display: flex;
@@ -328,24 +295,6 @@
     margin-left: 11px;
 }
 
-.conjunto-pagina{
-    display: flex;
-    flex-direction: column;
-}
-
-/* .separador-horizontal {
-    /* background-color: black; */
-    /* border: 1px solid #DBDBDB;
-    width: 100%;
-    margin: 0 auto;
-} */
-
-.separador-vertical {
-    background-color: #DBDBDB;
-    width: 1px;
-    height: 22px;
-}
-
 .separador-vertical-2 {
     background-color: #FAFAFA;;
     width: 28px;
@@ -356,40 +305,14 @@
     font-size: 22px;
 }
 
-ion-icon[name="compass-outline"]{
-    font-size: 22px;
-}
-
-ion-icon[name="heart-outline"]{
-    font-size: 22px;
-}
-
-ion-icon[name="logo-instagram"]{
-    font-size: 22px;
-} 
-
-ion-icon[name="person-outline"]{
-    font-size: 22px;
-} 
-
-ion-icon[name="ellipsis-horizontal-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
-    margin-right: 15px;
-    font-size: 22px;
-}
-
-ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
-    margin-right: 15px;
-    font-size: 17px;
-}
-
-/*Posições relativas dentro do storie. Tenho que colocar uma para cada img mesmo?*/
+/*Posições relativas dentro do storie.*/
 
 .img-storie-1{
     left: 238px;
     top: 111px;
 }
 
-/*Essas medidas tão estranhas -- Perguntar ao tutor*/
+
 .back-img-storie-1{
     left: -5px;
     top: -5px;
@@ -400,7 +323,7 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     top: 111px;
 }
 
-/*Essas medidas tão estranhas -- Perguntar ao tutor*/
+
 .back-img-storie-2{
     left: -5px;
     top: -5px;
@@ -411,7 +334,7 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     top: 111px;
 }
 
-/*Essas medidas tão estranhas -- Perguntar ao tutor*/
+
 .back-img-storie-3{
     left: -5px;
     top: -5px;
@@ -422,7 +345,7 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     top: 111px;
 }
 
-/*Essas medidas tão estranhas -- Perguntar ao tutor*/
+
 .back-img-storie-4{
     left: 5px;
     top: -5px;
@@ -433,7 +356,7 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     top: 111px;
 }
 
-/*Essas medidas tão estranhas -- Perguntar ao tutor*/
+
 .back-img-storie-5{
     left: 1px;
     top: -5px;
@@ -444,7 +367,7 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     top: 111px;
 }
 
-/*Essas medidas tão estranhas -- Perguntar ao tutor*/
+
 .back-img-storie-6{
     left: -3px;
     top: -5px;
@@ -455,7 +378,7 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     top: 111px;
 }
 
-/*Essas medidas tão estranhas -- Perguntar ao tutor*/
+
 .back-img-storie-7{
     left: -1px;
     top: -5px;
@@ -466,12 +389,13 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     top: 111px;
 }
 
-/*Essas medidas tão estranhas -- Perguntar ao tutor*/
+
 .back-img-storie-8{
     left: -spx;
     top: -5px;
 }
 
+/*Configuração das fontes e estilos de texto da página*/
 .font-principal{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #262626;
@@ -531,8 +455,45 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     color: #C7C7C7;
 }
 
+/*Configuração dos ion-icon*/
+ion-icon[name="compass-outline"]{
+    font-size: 22px;
+}
+
+ion-icon[name="heart-outline"]{
+    font-size: 22px;
+}
+
+ion-icon[name="logo-instagram"]{
+    font-size: 22px;
+} 
+
+ion-icon[name="person-outline"]{
+    font-size: 22px;
+} 
+
+ion-icon[name="ellipsis-horizontal-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+
+/*Bloco da página completa*/
+.corpo-pagina{
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 /* ---------------------------------------------------------------------------------------------------------------*/
-/*Media query enquanto não tenho certeza*/
+/*Configurações Media query*/
 @media (max-width: 935px) {
 	body {
 		width: 100%;
@@ -551,42 +512,16 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
         display: none;
     }
 
-/*     .separador-horizontal {
-        background-color: black;
-        height: 1px;
-        width: 100%;
-        /* margin: 20px 0;} */
-
-/*     .post-completo{
-        width: 100%;
-    } */
-
     .corpo-pagina{
         width: 100%;
         justify-content: center;
     }
     
-/*    .bloco-envolta-post{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0 auto;
-    }
-    
-/*     .bloco-feed{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    } */ 
-
 }
 
 @media (max-width: 614px) {
 	body {
-		width: 100%; /* Somente em telas menores que 600px, a largura passará a ser 100% em vez de 900px */
+		width: 100%; 
 	}
 
 
@@ -599,17 +534,6 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     .separador-vertical {
         display: none;
     }
-
-/*     .barra-topo {
-        display: flex;
-        height: 54px;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-        background-color: #FFFFFF;
-        border-bottom: 1px solid #DBDBDB;
-    } */
 
     .barra-topo-icones-esquerda {
         width: 50%; 
@@ -635,11 +559,6 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
     .bloco-direita{
         display: none;
     }
-
-/*     .separador-horizontal {
-        width: 100%;
-        /* margin: 20px 0; */
-/*    } */
 
     .corpo-pagina{
         width: 100%;
@@ -684,7 +603,6 @@ ion-icon[name="bookmark-outline"]{ /*COMO COLOCAR O ION-ICON PARA O LADO?*/
 
     .foto-feed {
         width: 100%;
-        /* height: 400px; */
     }
 
     .conf-seta-stories{
